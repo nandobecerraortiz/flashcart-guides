@@ -1,7 +1,7 @@
 site_name: Flashcart Guides
-site_url: https://sanrax.github.io/flashcart-guides
-repo_name: Sanrax/flashcart-guides
-repo_url: https://github.com/Sanrax/flashcart-guides
+site_url: https://nandobecerraortiz.github.io/flashcart-guides
+repo_name: nandobecerraortiz/flashcart-guides
+repo_url: https://github.com/nandobecerraortiz/flashcart-guides
 theme:
   features:
     - navigation.tabs
