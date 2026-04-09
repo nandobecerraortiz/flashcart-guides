@@ -1,0 +1,75 @@
+site_name: Flashcart Guides
+site_url: https://sanrax.github.io/flashcart-guides
+repo_name: Sanrax/flashcart-guides
+repo_url: https://github.com/Sanrax/flashcart-guides
+theme:
+  features:
+    - navigation.tabs
+    - content.tooltips
+    - content.code.copy
+    - content.code.annotate
+  favicon: images/favicon.png
+  logo: images/web-icon.png
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+plugins:
+  - macros
+copyright: Created and maintained by Sanras (u/Arnas_Z), and Kai (u/kaikun97)
+extra:
+  pico_versions:
+    loader: "v1.6.0"
+    launcher: "v1.2.0"
+    fcnetrev: "0"
+  generator: false
+  social:
+    - icon: fontawesome/brands/reddit
+      link: https://reddit.com/r/flashcarts
+    - icon: fontawesome/brands/github
+      link: https://github.com/Sanrax
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/fCzqcWteC4
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
