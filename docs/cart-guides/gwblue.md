@@ -6,7 +6,7 @@ title: Gateway Blue
 # Gateway Blue
 ## gateway-3ds.com
 
-!!! info
+!!! info "Cart Info"
     
     Gateway3DS was a bundle of two flashcarts; one blue DS mode cart, and one red 3DS mode cart. The main goal of this product was to launch 3DS ROMs from the red cart. This was achieved by running a DS mode exploit from the blue cart to load into Gateway emuNAND, where the red cart could then be used.
 
@@ -39,24 +39,37 @@ title: Gateway Blue
         Gateway Blue WoodR4 1.62 is known to have issues with anti-piracy checks in a few newer games, notably with clean roms of Pokemon Black & White 2, where EXP gain gets disabled by AP detection.
         
         To fix this issue, tap the Y button in the WoodR4 menu with the game highlighted, open the cheats menu, and enable the `Bypass Anti-Piracy` cheat before starting the game.
-    
-    !!! tip "Themes"
 
-        Looking to change the default theme? Check out the themes repository at [themes.flashcarts.net](https://themes.flashcarts.net)!
+        Alternatively, you can AP-patch BW2 with NDS ROM Tool, after which you won't need to use any cheats to bypass AP. You can download it [here.](https://gbatemp.net/download/retrogamefan-nds-rom-tool-v1-0_b1215.35735/)
+    
+    !!! tip "Post-Setup Enhancements"
+
+        **Emulators**
+        
+        To emulate retro consoles on your DS like GBA, GB/C, NES, and others, you will need to download emulators.
+        
+        [Emulators Tutorial :octicons-arrow-right-16:](../tutorials/emulators.md){ .md-button }
+        
+        **Themes**
+        
+        Looking to customize your menu? Check out the AKMenu themes repository:
+        
+        [Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/akmenu/){ .md-button }
 
 === "Pico-Launcher"
 
-    !!! info "Kernel Info"
+    !!! note "Kernel Info"
 
-        Pico-Launcher is the game menu for the DS-Pico (an open source DS flashcart by the LNH team) and other supported carts. Combined with Pico-Loader, it can be used as a full kernel, and supports almost all retail DS games. It features a material-inspired user interface, and an extremely fast loader.
+        Pico-Launcher is the game menu for the DSpico (an open source DS flashcart by the LNH team) and other supported carts. Combined with Pico-Loader, it can be used as a full kernel, and supports almost all retail DS games. It features a material-inspired user interface, and an extremely fast loader.
 
-    !!! warning "Soft-Reset Not Supported"
+    ??? warning "Soft-Reset Not Supported"
 
         Note that Pico-Launcher/Loader currently does not support soft-resetting to the game menu. If this is important to you, consider using WoodR4 or AceOS.
 
     1. Format the SD card you are using by following the [formatting tutorial.](../tutorials/formatting.md){target="_blank"}
 
-    1. Download the latest [Pico Package for Gateway Blue.](https://picoarchive.cdn.blobfrii.com/pico_package_GWBLUE.zip?picoloader={{pico_versions.loader}}&picolauncher={{pico_versions.launcher}}&fcnetrev={{pico_versions.fcnetrev}})
+    1. Download the latest [Pico Package for Gateway Blue.](https://mirrors.flashcarts.net/pico-builds/pico_package_GWBLUE.zip)
+        - <small>Currently updated to Pico-Launcher `{{pico_versions.launcher}}` and Pico-Loader `{{pico_versions.loader}}`</small>
 
     1. Extract the `pico_package_GWBLUE.zip` file with [7-Zip](https://www.7-zip.org/), or your native file manager app. Then, copy *the contents* into the root of your SD card.
     
@@ -71,6 +84,36 @@ title: Gateway Blue
         - ![GWBlue](../images/SD_Files/GWBlue/Pico.png){ align=left width="600"}
     
     1. Insert the SD card back into your cart, plug the cart into your DS, and see if it boots into the menu.
+
+    !!! tip "Post-Setup Enhancements"
+
+        **Emulators**
+        
+        To emulate retro consoles like GBA, GB/C, NES, and others, you will need to add emulators and configure their file associations for Pico-Launcher to display retro ROMs in the menu.
+        
+        [Emulators Tutorial :octicons-arrow-right-16:](../tutorials/emulators-pico.md){ .md-button }
+        
+        **Game Covers**
+        
+        Pico-Launcher supports showing game covers in cover flow layout mode, and on the top screen in icons mode. You will need to add cover images to your SD card to use this feature.
+        
+        [PicoCover :octicons-arrow-right-16:](https://scaletta.github.io/PicoCover/){ .md-button }
+        [TwilightBoxart :octicons-arrow-right-16:](https://twilightboxart.com/){ .md-button }
+        [PicoDex :octicons-arrow-right-16:](https://rasalopa.github.io/picodex/){ .md-button }
+        
+        To create your own custom covers for Pico-Launcher, check out the cover creator. Save each cover in the `_pico/covers/user` folder on your SD card, named after its ROM file plus `.bmp` (for example, `MyGame.nds.bmp`).
+        
+        [Cover Creator :octicons-arrow-right-16:](https://tasken.github.io/banner-maker/#cover){ .md-button }
+        
+        **Themes**
+        
+        Looking to customize your DSpico interface? Check out the Pico themes repository:
+        
+        [Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/pico/){ .md-button }
+        
+        To create your own custom themes for Pico-Launcher, check out the themes creator:
+        
+        [Themes Creator :octicons-arrow-right-16:](https://santiagovalencia109.github.io/pl-Theme-Creator/){ .md-button }
 
 === "AceOS 2.13"
 

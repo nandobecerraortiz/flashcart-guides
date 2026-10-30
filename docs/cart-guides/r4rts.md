@@ -6,39 +6,19 @@ title: R4i SDHC RTS
 # R4i SDHC RTS
 ## r4rts.com
 
-!!! info
+!!! info "Cart Info"
 
     These carts are clones of the M3 DS Real cart. They advertised RTS support in their stock kernel, similar to the M3's RTS support in its Sakura kernel. As the cart is M3 hardware at the end of the day, it's compatible with M3 loaders such as M3DS YSMenu and M3DS Pico-Launcher. Thanks to LifeHackerHansol's work on M3DS flashcart-bootstrap, the r4rts.com carts now have a way to autoboot both of these kernels.
 
 ### Setup Guide:
 
-=== "YSMenu"
-
-    1. Format the SD card you are using by following the [formatting tutorial.](../tutorials/formatting.md){target="_blank"}
-    
-    1. Download the [r4rts.com YSMenu 7.06 package.](https://github.com/Sanrax/YSMenu-Custom-Packages/releases/download/v7.06/r4rts.com_YSMenu_7.06.zip)
-    
-    1. Next, extract *the contents* of the downloaded kernel zip to your SD card.
-    
-    1. Place any `.nds` game ROMs you'd like to play into the `Games` folder.
-    
-    1. The files on your SD card should now look like this:
-    
-        - ![R4RTS YS](../images/SD_Files/R4RTS/YSMenu.png){ align=left width="600"}
-
-    1. Insert the SD back into the cart, plug the cart into the DS, and see if it boots into the menu.
-    
-    !!! tip "Themes"
-    
-        Looking to change the default theme? Check out the YSMenu themes repository at [themes.flashcarts.net](https://themes.flashcarts.net/ysmenu/)!
-
 === "Pico-Launcher"
 
-    !!! info "Kernel Info"
+    !!! note "Kernel Info"
 
-        Pico-Launcher is the game menu for the DS-Pico (an open source DS flashcart by the LNH team) and other supported carts. Combined with Pico-Loader, it can be used as a full kernel, and supports almost all retail DS games. It features a material-inspired user interface, and an extremely fast loader.
+        Pico-Launcher is the game menu for the DSpico (an open source DS flashcart by the LNH team) and other supported carts. Combined with Pico-Loader, it can be used as a full kernel, and supports almost all retail DS games. It features a material-inspired user interface, and an extremely fast loader.
 
-    !!! warning "Soft-Reset & RTS Not Supported"
+    ??? warning "Soft-Reset & RTS Not Supported"
 
         Note that Pico-Launcher/Loader currently does not support soft-resetting to the game menu. If this is important to you, consider using YSMenu or the stock kernel.
 
@@ -46,7 +26,8 @@ title: R4i SDHC RTS
 
     1. Format the SD card you are using by following the [formatting tutorial.](../tutorials/formatting.md){target="_blank"}
 
-    1. Download the latest [Pico Package for M3DS Real.](https://picoarchive.cdn.blobfrii.com/pico_package_M3DS.zip?picoloader={{pico_versions.loader}}&picolauncher={{pico_versions.launcher}}&fcnetrev={{pico_versions.fcnetrev}})
+    1. Download the latest [Pico Package for M3DS Real.](https://mirrors.flashcarts.net/pico-builds/pico_package_M3DS.zip)
+        - <small>Currently updated to Pico-Launcher `{{pico_versions.launcher}}` and Pico-Loader `{{pico_versions.loader}}`</small>
 
     1. Extract the `pico_package_M3DS.zip` file with [7-Zip](https://www.7-zip.org/), or your native file manager app.
 
@@ -71,6 +52,66 @@ title: R4i SDHC RTS
         - ![R4RTS Pico](../images/SD_Files/R4RTS/Pico.png){ align=left width="600"}
     
     1. Insert the SD card back into your cart, plug the cart into your DS, and see if it boots into the menu.
+
+    !!! tip "Post-Setup Enhancements"
+
+        **Emulators**
+        
+        To emulate retro consoles like GBA, GB/C, NES, and others, you will need to add emulators and configure their file associations for Pico-Launcher to display retro ROMs in the menu.
+        
+        [Emulators Tutorial :octicons-arrow-right-16:](../tutorials/emulators-pico.md){ .md-button }
+        
+        **Game Covers**
+        
+        Pico-Launcher supports showing game covers in cover flow layout mode, and on the top screen in icons mode. You will need to add cover images to your SD card to use this feature.
+        
+        [PicoCover :octicons-arrow-right-16:](https://scaletta.github.io/PicoCover/){ .md-button }
+        [TwilightBoxart :octicons-arrow-right-16:](https://twilightboxart.com/){ .md-button }
+        [PicoDex :octicons-arrow-right-16:](https://rasalopa.github.io/picodex/){ .md-button }
+        
+        To create your own custom covers for Pico-Launcher, check out the cover creator. Save each cover in the `_pico/covers/user` folder on your SD card, named after its ROM file plus `.bmp` (for example, `MyGame.nds.bmp`).
+        
+        [Cover Creator :octicons-arrow-right-16:](https://tasken.github.io/banner-maker/#cover){ .md-button }
+        
+        **Themes**
+        
+        Looking to customize your DSpico interface? Check out the Pico themes repository:
+        
+        [Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/pico/){ .md-button }
+        
+        To create your own custom themes for Pico-Launcher, check out the themes creator:
+        
+        [Themes Creator :octicons-arrow-right-16:](https://santiagovalencia109.github.io/pl-Theme-Creator/){ .md-button }
+
+=== "YSMenu"
+
+    1. Format the SD card you are using by following the [formatting tutorial.](../tutorials/formatting.md){target="_blank"}
+    
+    1. Download the [r4rts.com YSMenu 7.06 package.](https://github.com/Sanrax/YSMenu-Custom-Packages/releases/download/v7.06/r4rts.com_YSMenu_7.06.zip)
+    
+    1. Next, extract *the contents* of the downloaded kernel zip to your SD card.
+    
+    1. Place any `.nds` game ROMs you'd like to play into the `Games` folder.
+    
+    1. The files on your SD card should now look like this:
+    
+        - ![R4RTS YS](../images/SD_Files/R4RTS/YSMenu.png){ align=left width="600"}
+
+    1. Insert the SD back into the cart, plug the cart into the DS, and see if it boots into the menu.
+    
+    !!! tip "Post-Setup Enhancements"
+
+        **Emulators**
+        
+        To emulate retro consoles on your DS like GBA, GB/C, NES, and others, you will need to download emulators.
+        
+        [Emulators Tutorial :octicons-arrow-right-16:](../tutorials/emulators.md){ .md-button }
+        
+        **Themes**
+        
+        Looking to customize your menu? Check out the YSMenu themes repository:
+        
+        [Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/ysmenu/){ .md-button }
 
 ---
 

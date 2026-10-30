@@ -45,9 +45,35 @@ title: Galaxy Eagle Pro
     
     1. Insert the SD card back into your cart, plug the cart into your DS, and see if it boots into the menu.
 
-    !!! tip "Themes"
+    1. Press `Start` and go to `Settings`. Find `Other Settings` by pressing the R shoulder button to cycle through the settings and change `Game Loader` to `nds-bootstrap` and Save.
 
-        Looking to change the default theme? Check out the themes repository at [themes.flashcarts.net](https://themes.flashcarts.net)!
+    !!! tip "Post-Setup Enhancements"
+
+        **Plugins**
+        
+        To emulate retro consoles like GBA, GB/C, NES, and others or to play media such as videos, you will need to add plugins to AKMenu-Next:
+        
+        [Plugins Tutorial :octicons-arrow-right-16:](https://coderkei.github.io/akmenu-next-docs/guides/plugins/#__tabbed_1_1){ .md-button }
+        
+        **Game Covers**
+
+        AKMenu-Next can show game covers on the top screen. To use them, select one of the included cover themes: `Blue Skies Game Covers`, `DSpico Game Covers` or `Starlight Covers`. Then add cover images to your SD card. Covers made for Pico-Launcher work too.
+
+        [PicoCover :octicons-arrow-right-16:](https://scaletta.github.io/PicoCover/){ .md-button }
+
+        To create your own custom covers, check out the cover creator. Save each cover in the `_nds/covers_name` folder on your SD card, named after its ROM file without `.nds` (for example, `MyGame.bmp`).
+
+        [Cover Creator :octicons-arrow-right-16:](https://tasken.github.io/banner-maker/#cover-akmenu){ .md-button }
+
+        **Themes**
+        
+        Looking to customize your AKMenu-Next interface? Check out the AKMenu themes repository:
+    
+        [AKMenu-Next Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/aknext/){ .md-button }
+
+        AKMenu-Next is also backwards compatible with Acekard/Wood R4 themes, you can find them here:
+
+        [Acekard/Wood R4 Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/akmenu/){ .md-button }
 
 === "GEi Pro v5.1"
 

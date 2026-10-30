@@ -11,6 +11,26 @@ This page contains guides for setting up various carts we commonly encounter ove
 
 If you'd like to improve this resource or add new carts, feel free to create a pull request in the GitHub repository!
 
+## Cart Search
+
+Don't know which page matches your cart? You can search for a matching cart by typing in the URL that appears on the label of your cart into the search box below.
+
+Note that some manufacturers can have many hardware variants. If multiple results are returned for your cart's URL, you will need to check each page to see which one accurately matches the cart you have. Results are sorted by most common to least common carts, so starting at the first result is a good bet.
+
+<div class="cart-search" data-cart-search data-index-url="assets/search/cart-search.json">
+
+  <input
+    id="cart-search-input"
+    class="cart-search__input"
+    type="search"
+    placeholder="Example: r4isdhc.com"
+    autocomplete="off"
+    data-cart-search-input
+  />
+
+  <div class="cart-search__results" data-cart-search-results hidden></div>
+</div>
+
 ## Cart Guides
 
 ---
@@ -94,7 +114,6 @@ If you'd like to improve this resource or add new carts, feel free to create a p
         - r4ultra.com carts that can't boot R4 Ultra AKAIO 1.8.6a
         - r4i-u.com carts
         - r4ds-i.com.cn carts
-        - r4-pro.com carts
         - super4i.com R4i Super
     - *Amaze3DS Version:*
         - Amaze3DS carts
@@ -102,6 +121,7 @@ If you'd like to improve this resource or add new carts, feel free to create a p
 2.  **Compatibility List**
     - AliExpress R4DS Pro carts
     - r4iplat.com carts
+    - r4-pro.com carts
     - r4i-d.com carts
     - r4i-3dsnew.com carts
 
@@ -122,13 +142,21 @@ If you'd like to improve this resource or add new carts, feel free to create a p
 ### SuperCard Family
 
 - [**DSOne SDHC**](cart-guides/dsone.md "<img src="images/dsone.png" alt="DSOne" width="100">") - supercard.sc
+- [**DSOnei**](cart-guides/dsone.md "<img src="images/dsonei.jpg" alt="DSOne" width="100">") - supercard.sc
+- [**DSTWO**](cart-guides/dstwo.md "<img src="images/DSTWO.png" alt="DSTWO" width="100">") - supercard.sc
 
 ### M3 Family
 
 - [**M3 DS Real**](cart-guides/m3dsreal.md "<img src="images/m3dsreal.png" alt="M3 DS Real" width="100">") - m3adapter.com
-- [**iTouchDS**](cart-guides/itouchds.md "<img src="images/itouchds.png" alt="M3 DS Real" width="100">") - m3adapter.com
+- [**M3i Zero**](cart-guides/m3dsreal.md "<img src="images/M3i_Zero.png" alt="M3i Zero" width="100">") - m3adapter.com
+- [**M3i Zero [GMP-Z003]**](cart-guides/m3izero_g003.md "<img src="images/M3i_G003.png" alt="M3i Zero G003" width="100">") - m3adapter.com
+- [**iTouchDS**](cart-guides/itouchds.md "<img src="images/itouchds.png" alt="M3 DS Real" width="100">") - itouchds.com
 - [**R4iSDHC RTS Black**](cart-guides/rts_black.md "<img src="images/rts_black.jpg" alt="M3 DS Real" width="100">") - r4isdhc.com
 - [**R4i SDHC RTS**](cart-guides/r4rts.md "<img src="images/r4rts.jpg" alt="M3 DS Real" width="100">") - r4rts.com
+
+### CycloDS Family
+
+- [**EDGE**](cart-guides/edge.md "<img src="images/EDGE.png" alt="EDGE" width="100">") - edge-ds.cn
 
 ### Other Flashcarts
 

@@ -6,13 +6,82 @@ title: M3 DS Real
 # M3 DS Real and M3i Zero (Not GMP-Z003)
 ## m3adapter.com
 
-!!! info
+!!! info "Cart Info"
 
     The M3 DS Real is the second Slot-1 flashcart from the M3 Adapter team. The M3 team disappeared around 2011, and the Sakura kernel hasn't been updated since then. That means some games released later on in the DS lifecycle don't actually boot in the Sakura/Touchpod kernel, due to missing compatibility patches. To fix this issue, it's recommended to either run Pico-Launcher/YSMenu as replacement kernel, or Sakura with YSMenu as fallback, if you choose to keep Sakura as the primary kernel.
 
     While this cart does support SDHC SD cards, Sakura/TouchPod has issues with cards that are 64GB or larger. The nds loader will simply refuse to load games, or load the game but crash/freeze soon after. However, YSMenu and Pico-Launcher handle 64GB and larger cards just fine on the M3 DS Real, when configured as primary kernel.
 
 ### Setup Guide:
+
+=== "Pico-Launcher"
+
+    !!! note "Kernel Info"
+
+        Pico-Launcher is the game menu for the DSpico (an open source DS flashcart by the LNH team) and other supported carts. Combined with Pico-Loader, it can be used as a full kernel, and supports almost all retail DS games. It features a material-inspired user interface, and an extremely fast loader.
+
+    ??? warning "Soft-Reset & RTS Not Supported"
+
+        Note that Pico-Launcher/Loader currently does not support soft-resetting to the game menu. If this is important to you, consider using YSMenu or Sakura.
+
+        RTS is only supported on Sakura, the stock kernel for M3 DS Real.
+
+    1. Format the SD card you are using by following the [formatting tutorial.](../tutorials/formatting.md){target="_blank"}
+
+    1. Download the latest [Pico Package for M3DS Real.](https://mirrors.flashcarts.net/pico-builds/pico_package_M3DS.zip)
+        - <small>Currently updated to Pico-Launcher `{{pico_versions.launcher}}` and Pico-Loader `{{pico_versions.loader}}`</small>
+
+    1. Extract the `pico_package_M3DS.zip` file with [7-Zip](https://www.7-zip.org/), or your native file manager app.
+
+    1. From within the extracted files, copy the following files/folders to your SD card root:
+
+        - `_pico` folder
+
+        - `SYSTEM` folder
+
+        - `_picoboot.nds`
+    
+    1. If you'd like to be able to use cheats on your games, download a [cheat database.](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711){target="_blank"}
+    
+    1. You will need the `usrcheat.dat` file from the download link in the post. Copy this file into the `_pico` folder on your SD card.
+
+    1. Create a `Games` folder in your SD card root, and place any `.nds` game ROMs you'd like to play inside.
+    
+    1. The files on your SD card should now look like this:
+    
+        - ![M3DS](../images/SD_Files/M3DS_Real/Pico.png){ align=left width="600"}
+    
+    1. Insert the SD card back into your cart, plug the cart into your DS, and see if it boots into the menu.
+
+    !!! tip "Post-Setup Enhancements"
+
+        **Emulators**
+        
+        To emulate retro consoles like GBA, GB/C, NES, and others, you will need to add emulators and configure their file associations for Pico-Launcher to display retro ROMs in the menu.
+        
+        [Emulators Tutorial :octicons-arrow-right-16:](../tutorials/emulators-pico.md){ .md-button }
+        
+        **Game Covers**
+        
+        Pico-Launcher supports showing game covers in cover flow layout mode, and on the top screen in icons mode. You will need to add cover images to your SD card to use this feature.
+        
+        [PicoCover :octicons-arrow-right-16:](https://scaletta.github.io/PicoCover/){ .md-button }
+        [TwilightBoxart :octicons-arrow-right-16:](https://twilightboxart.com/){ .md-button }
+        [PicoDex :octicons-arrow-right-16:](https://rasalopa.github.io/picodex/){ .md-button }
+        
+        To create your own custom covers for Pico-Launcher, check out the cover creator. Save each cover in the `_pico/covers/user` folder on your SD card, named after its ROM file plus `.bmp` (for example, `MyGame.nds.bmp`).
+        
+        [Cover Creator :octicons-arrow-right-16:](https://tasken.github.io/banner-maker/#cover){ .md-button }
+        
+        **Themes**
+        
+        Looking to customize your DSpico interface? Check out the Pico themes repository:
+        
+        [Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/pico/){ .md-button }
+        
+        To create your own custom themes for Pico-Launcher, check out the themes creator:
+        
+        [Themes Creator :octicons-arrow-right-16:](https://santiagovalencia109.github.io/pl-Theme-Creator/){ .md-button }
 
 === "YSMenu"
 
@@ -42,47 +111,19 @@ title: M3 DS Real
 
     1. Insert the SD card back into your cart, plug the cart into your DS, and see if it boots into the menu.
 
-    !!! tip "Themes"
+    !!! tip "Post-Setup Enhancements"
 
-        Looking to change the default theme? Check out the YSMenu themes repository at [themes.flashcarts.net](https://themes.flashcarts.net/ysmenu/)!
-
-=== "Pico-Launcher"
-
-    !!! info "Kernel Info"
-
-        Pico-Launcher is the game menu for the DS-Pico (an open source DS flashcart by the LNH team) and other supported carts. Combined with Pico-Loader, it can be used as a full kernel, and supports almost all retail DS games. It features a material-inspired user interface, and an extremely fast loader.
-
-    !!! warning "Soft-Reset & RTS Not Supported"
-
-        Note that Pico-Launcher/Loader currently does not support soft-resetting to the game menu. If this is important to you, consider using YSMenu or Sakura.
-
-        RTS is only supported on Sakura, the stock kernel for M3 DS Real.
-
-    1. Format the SD card you are using by following the [formatting tutorial.](../tutorials/formatting.md){target="_blank"}
-
-    1. Download the latest [Pico Package for M3DS Real.](https://picoarchive.cdn.blobfrii.com/pico_package_M3DS.zip?picoloader={{pico_versions.loader}}&picolauncher={{pico_versions.launcher}}&fcnetrev={{pico_versions.fcnetrev}})
-
-    1. Extract the `pico_package_M3DS.zip` file with [7-Zip](https://www.7-zip.org/), or your native file manager app.
-
-    1. From within the extracted files, copy the following files/folders to your SD card root:
-
-        - `_pico` folder
-
-        - `SYSTEM` folder
-
-        - `_picoboot.nds`
-    
-    1. If you'd like to be able to use cheats on your games, download a [cheat database.](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711){target="_blank"}
-    
-    1. You will need the `usrcheat.dat` file from the download link in the post. Copy this file into the `_pico` folder on your SD card.
-
-    1. Create a `Games` folder in your SD card root, and place any `.nds` game ROMs you'd like to play inside.
-    
-    1. The files on your SD card should now look like this:
-    
-        - ![M3DS](../images/SD_Files/M3DS_Real/Pico.png){ align=left width="600"}
-    
-    1. Insert the SD card back into your cart, plug the cart into your DS, and see if it boots into the menu.
+        **Emulators**
+        
+        To emulate retro consoles on your DS like GBA, GB/C, NES, and others, you will need to download emulators.
+        
+        [Emulators Tutorial :octicons-arrow-right-16:](../tutorials/emulators.md){ .md-button }
+        
+        **Themes**
+        
+        Looking to customize your menu? Check out the YSMenu themes repository:
+        
+        [Themes Repository :octicons-arrow-right-16:](https://themes.flashcarts.net/ysmenu/){ .md-button }
 
 === "Sakura + YSMenu"
 

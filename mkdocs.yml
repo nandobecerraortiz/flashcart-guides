@@ -1,7 +1,7 @@
 site_name: Flashcart Guides
-site_url: https://nandobecerraortiz.github.io/flashcart-guides
-repo_name: nandobecerraortiz/flashcart-guides
-repo_url: https://github.com/nandobecerraortiz/flashcart-guides
+site_url: https://sanrax.github.io/flashcart-guides
+repo_name: Sanrax/flashcart-guides
+repo_url: https://github.com/Sanrax/flashcart-guides
 theme:
   features:
     - navigation.tabs
@@ -40,12 +40,17 @@ theme:
         name: Switch to system preference
 plugins:
   - macros
-copyright: Created and maintained by Sanras (u/Arnas_Z), and Kai (u/kaikun97)
+  - social:
+      cards_layout: default
+      cards_layout_options:
+        logo: docs/images/card-icon.png
+        background_color: "#B23456"
+        description: A repository of set-up tutorials and downloads for DS flashcarts
+copyright: Created and maintained by Sanras (u/Arnas_Z), and Kai (u/KaiChanBunny)
 extra:
   pico_versions:
-    loader: "v1.6.0"
-    launcher: "v1.2.0"
-    fcnetrev: "0"
+    loader: "v1.7.1"
+    launcher: "v1.3.0"
   generator: false
   social:
     - icon: fontawesome/brands/reddit
@@ -56,14 +61,21 @@ extra:
       link: https://discord.gg/fCzqcWteC4
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/cart-search.js
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - md_in_html
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:

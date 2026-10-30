@@ -23,6 +23,12 @@ title: Setting Up Emulators
         1. Open/extract `GBARunner3-hicode.zip`, and copy *the contents* into the root of your SD card.
         
         1. Download the [GBARunner3 frontend.](https://github.com/flashcarts/gbar3-frontend/releases/download/v0.10.0-fcnet2/gbar3-frontend.nds)
+
+            !!! danger "R4iMenu Compatibility"
+    
+                R4iMenu isn't able to boot homebrew compiled with Calico libnds, such as GBARunner3-Frontend 0.10.0 and newer.
+                
+                Therefore, R4iMenu users should instead download the older 0.9.0 release [found here.](https://github.com/flashcarts/gbar3-frontend/releases/download/v0.9.0-fcnet3/gbar3-frontend.nds)
        
         1. Create an `Emulators` folder on your SD card root, and place `gbar3-frontend.nds` inside.
          
@@ -264,7 +270,7 @@ title: Setting Up Emulators
     
                 jEnesisDS **requires** ROMs to be in `.gen`, `.bin`, or `.smd` format to be recognized in the file browser. If you have `.md` ROMs, rename them to `.gen` or `.bin` before placing them on your SD card.
 
-                You can find a batch script [here](../assets/rename_md.bat) to rename all your `.md` files quickly. Place `rename_md.bat` in the same folder as your `.md` ROMs, then double click on it to run the script. It will ask whether to rename your files to `.gen` or `.bin`. After you make a choice, all `.md` files in the folder will be renamed to the target extension.
+                You can find a batch script <a href="../../assets/rename_md.bat" download>here</a> to rename all your `.md` files quickly. Place `rename_md.bat` in the same folder as your `.md` ROMs, then double click on it to run the script. It will ask whether to rename your files to `.gen` or `.bin`. After you make a choice, all `.md` files in the folder will be renamed to the target extension.
         
         1. Place the SD card back into your cart, and boot into the menu.
         
